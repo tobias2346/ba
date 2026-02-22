@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    // Le dice al motor de TS que trabaje con la sintaxis más moderna de JS
+    "module": "ESNext",
+    "target": "ES2022",
+    "moduleResolution": "node",
+
+    // ESTAS SON LAS LÍNEAS MÁS IMPORTANTES PARA TU CASO:
+    // 1. Mantenemos el chequeo de JS activado para encontrar errores reales.
+    "checkJs": true,
+
+    // 2. Desactivamos la regla que te da el error ts(7006).
+    // Esto permite que parámetros como 'req', 'res', 'next' no necesiten un tipo explícito.
+    "noImplicitAny": false
+  },
+  // Le decimos que ignore la carpeta node_modules para que no la analice.
+  "exclude": ["node_modules"]
+}

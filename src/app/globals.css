@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@plugin "daisyui";
+
+body {
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+@theme inline {
+  --font-inter: var(--font-inter);
+  --font-nunito: var(--font-nunito);
+}
+
+@layer base {
+  :root {
+    --primary: 195 68% 50%;
+    /* #2DAFCF */
+    --secondary: 215 25% 27%;
+    /* #1e293b */
+    --background: 222 47% 11%;
+    /* #1e293b */
+    --light: 0 0% 98%;
+    /* #fafafa */
+    --dark: 229 84% 5%;
+    /* #1e293b */
+
+    --success: 142 71% 45%;
+    /* #22c55e (green-500) */
+    --error: 0 84% 60%;
+    /* #ef4444 (red-500) */
+
+    --warning: 47 95% 53%;
+    /* #eab308 (yellow-500) */
+
+    --slate50: 210 40% 98%;
+    --slate100: 210 40% 96%;
+    --slate200: 214 32% 91%;
+    --slate300: 213 27% 84%;
+    --slate400: 215 20% 65%;
+    --slate500: 215 16% 47%;
+    --slate600: 215 19% 35%;
+    --slate800: 217 32% 21%;
+  }
+
+  .dark {
+    --primary: 195 68% 50%;
+    /* #2DAFCF */
+
+    --secondary: 215 25% 27%;
+    /* #1e293b */
+    --background: 222 47% 11%;
+    /* #1e293b */
+    --light: 0 0% 98%;
+    /* #fafafa */
+    --dark: 229 84% 5%;
+    /* #1e293b */
+
+    --success: 142 71% 45%;
+    /* #22c55e (green-500) */
+
+    --error: 0 84% 60%;
+    /* #ef4444 (red-500) */
+
+    --warning: 47 95% 53%;
+    /* #eab308 (yellow-500) */
+
+    --slate50: 210 40% 98%;
+    --slate100: 210 40% 96%;
+    --slate200: 214 32% 91%;
+    --slate300: 213 27% 84%;
+    --slate400: 215 20% 65%;
+    --slate500: 215 16% 47%;
+    --slate600: 215 19% 35%;
+    --slate800: 217 32% 21%;
+  }
+}
+
+@layer base {
+  body {
+    @apply text-light bg-background;
+  }
+}
+
+/* Ocultar scrollbar horizontal */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+/* Scrollbar visible pero discreta */
+.soft-scrollbar {
+  scrollbar-width: thin;              /* Firefox */
+  scrollbar-color: rgba(255,255,255,0.2) transparent; /* Firefox */
+}
+
+/* Webkit (Chrome, Safari, Edge) */
+.soft-scrollbar::-webkit-scrollbar {
+  height: 6px;  /* grosor horizontal */
+  width: 6px;   /* grosor vertical */
+}
+
+.soft-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* fondo del track */
+}
+
+.soft-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25); /* color tenue */
+  border-radius: 10px;                        /* esquinas redondeadas */
+  transition: background-color 0.3s ease;
+}
+
+.soft-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.4); /* más visible al pasar el mouse */
+}
+
+
+/* 🎯 Mobile por defecto (fade arriba) */
+.mask-fade {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #1e293b 40%,
+    #1e293b 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #1e293b 40%,
+    #1e293b 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+/* 🎯 Desktop (fade izquierda) */
+@media (min-width: 768px) {
+  .mask-fade {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #1e293b 60%,
+      #1e293b 100%
+    );
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #1e293b 60%,
+      #1e293b 100%
+    );
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+  }
+}
