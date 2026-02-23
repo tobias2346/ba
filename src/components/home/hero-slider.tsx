@@ -58,7 +58,7 @@ export function HeroSlider({ data }) {
             <CarouselItem key={index}>
               <div className="relative h-auto w-full flex flex-col md:flex-row bg-dark ">
                 <div className="w-full md:w-1/3 h-10 mt-4 md:h-auto flex flex-col justify-center items-center md:items-start lg:pl-[5vw] 2xl:pl-[10vw] gap-y-2 md:gap-y-4">
-                  <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold drop-shadow-lg font-headline">
+                  <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold drop-shadow-lg font-headline text-primary">
                     {slide.name}
                   </h2>
                   <div className="hidden md:flex items-center gap-x-2">

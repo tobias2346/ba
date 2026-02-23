@@ -82,8 +82,8 @@ export default function BuildingPage() {
         </div>
         <div className="flex flex-col md:flex-row justify-between gap-4 items-start md:items-center w-full">
           <div className="flex flex-col md:flex-row justify-start gap-4 items-start md:items-center ">
-            <p className=" text-xs text-[#D6D6D6]">Copyright© 2025. Todos los derechos reservados.</p>
-            <p className="text-xs text-[#D6D6D6]">La venta de entradas esta verificada por los entes deportivos de Argentina.</p>
+            <p className=" text-xs text-primary">Copyright© 2025. Todos los derechos reservados.</p>
+            <p className="text-xs text-primary">La venta de entradas esta verificada por los entes deportivos de Argentina.</p>
           </div>
           <div className="flex items-start md:items-center gap-4">
             <Link href='https://www.instagram.com/laligabasquet' target='_blank'>
