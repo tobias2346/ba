@@ -10,8 +10,8 @@ export default function ClubEvents({ data }) {
         data.length === 0 ?
           <div className='flex flex-col items-center gap-y-2'>
             <Image width={100} height={100} alt="Calendar" src='/icons/big-calendar.svg' />
-            <p className="text-gray-500 text-lg">El club no tiene partidos</p>
-            <Link href={'/'} className='px-4 py-2 font-medium rounded-lg shadow transition-colors duration-200 text-sm xl:text-base bg-primary text-black hover:bg-primary/80' >Ver partidos</Link>
+            <p className="text-gray-500 text-lg">El club no tiene eventos</p>
+            <Link href={'/'} className='px-4 py-2 font-medium rounded-lg shadow transition-colors duration-200 text-sm xl:text-base bg-primary text-black hover:bg-primary/80' >Ver eventos</Link>
           </div>
           : <div className="flex flex-col gap-6 w-full">
             {Array.from({ length: Math.ceil(data.length / 3) }).map((_, rowIndex) => {

@@ -229,7 +229,7 @@ export default function EventsListPage() {
       <Card className="border-none bg-light text-primary shadow-xl">
         <CardHeader className="flex flex-row items-center justify-between">
           <div className="flex items-center gap-x-4">
-            <CardTitle>Partidos</CardTitle>
+            <CardTitle>Eventos</CardTitle>
             <span className="font-semibold text-primary text-lg bg-primary/20 rounded-2xl flex justify-center items-center w-12 h-7">
               {typedEvents.length}
             </span>

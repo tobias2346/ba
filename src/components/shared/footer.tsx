@@ -14,7 +14,7 @@ export function Footer() {
         <article className="flex gap-8 font-headline">
           <div className="flex flex-col items-start gap-y-2">
             <h3 className="text-lg font-semibold">Descubrir</h3>
-            <Link href='/' className="text-sm">Buscar partidos</Link>
+            <Link href='/' className="text-sm">Buscar eventos</Link>
             <Link href='/categories' className="text-sm">Clubes</Link>
           </div>
           <div className="flex flex-col items-start gap-y-2">

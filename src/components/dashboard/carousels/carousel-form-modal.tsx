@@ -118,7 +118,7 @@ export function CarouselFormModal({ isOpen, onClose, initialData }: CarouselForm
                   <FormItem>
                     <FormLabel>Nombre del Carrusel</FormLabel>
                     <FormControl>
-                      <Input className='bg-light text-primary shadow-xl border-none' {...field} placeholder="Ej: Partidos Destacados" />
+                      <Input className='bg-light text-primary shadow-xl border-none' {...field} placeholder="Ej: Eventos Destacados" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

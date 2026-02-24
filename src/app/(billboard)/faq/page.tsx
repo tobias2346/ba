@@ -10,7 +10,7 @@ const faqData = [
   {
     id: 2,
     question: "¿Cómo funciona mi QR?",
-    answer: "Cuando te registrás, Básquet ID te asigna un QR que sera tu identificación personal, única e intranferible para todos los eventos, a su vez, el mismo es dinámico para garantizar la mayor seguridad ( con lo cual no sirven las capturas de pantalla) . Como mencionamos este QR, es tu pase para todos los partidos a los que tengas acceso. Las entradas no se envían por mail: quedan asignadas automáticamente a tu cuenta.",
+    answer: "Cuando te registrás, Básquet ID te asigna un QR que sera tu identificación personal, única e intranferible para todos los eventos, a su vez, el mismo es dinámico para garantizar la mayor seguridad ( con lo cual no sirven las capturas de pantalla) . Como mencionamos este QR, es tu pase para todos los eventos a los que tengas acceso. Las entradas no se envían por mail: quedan asignadas automáticamente a tu cuenta.",
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ const faqData = [
   {
     id: 9,
     question: "¿Qué es la sección Clubes?",
-    answer: "La sección Clubes fue creada para que puedas acceder de manera ordenada a todos los equipos, según la liga a la que pertenecen. Cada club tiene su propio espacio donde puede alojar eventos fuera del calendario oficial, como partidos de infantiles, torneos amistosos, cenas, agasajos o actividades sociales. Como usuario, desde ahí vas a poder conocer y adquirir entradas para todas las actividades que organice tu club.",
+    answer: "La sección Clubes fue creada para que puedas acceder de manera ordenada a todos los equipos, según la liga a la que pertenecen. Cada club tiene su propio espacio donde puede alojar eventos fuera del calendario oficial, como eventos de infantiles, torneos amistosos, cenas, agasajos o actividades sociales. Como usuario, desde ahí vas a poder conocer y adquirir entradas para todas las actividades que organice tu club.",
   },
 ];
 

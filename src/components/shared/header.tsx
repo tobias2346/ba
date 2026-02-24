@@ -12,7 +12,7 @@ export function Header() {
   const { logged, user } = useUser();
 
   const baseLinks = [
-    { href: "/", label: "Partidos", includes: false },
+    { href: "/", label: "Eventos", includes: false },
     { href: "/categories", label: "Clubes", includes: true },
   ];
 
