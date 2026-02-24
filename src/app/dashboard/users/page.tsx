@@ -226,7 +226,7 @@ export default function UsersListPage() {
 
   return (
     <>
-      <Card className="border-none bg-secondary/20">
+      <Card className="border-none bg-light text-primary shadow-xl">
         <CardHeader className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-4">
             <Users className="h-6 w-6" />
@@ -243,7 +243,7 @@ export default function UsersListPage() {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
                 placeholder="Buscar por email, nombre o alias..."
-                className="pl-9 border-none bg-secondary/40 w-full"
+                className="pl-9 border-none bg-light text-primary shadow-xl w-full"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
@@ -276,7 +276,7 @@ export default function UsersListPage() {
                   <Card
                     key={u.id}
                     className={cn(
-                      "border-none bg-secondary/40",
+                      "border-none bg-light text-primary shadow-xl",
                       u.deletedAt && "opacity-50"
                     )}
                   >
@@ -489,7 +489,7 @@ export default function UsersListPage() {
           </DialogHeader>
 
           <Input
-            className="border-none bg-secondary/40"
+            className="border-none bg-light text-primary shadow-xl"
             value={newEmail}
             onChange={(e) => setNewEmail(e.target.value)}
           />

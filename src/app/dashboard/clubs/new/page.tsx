@@ -126,7 +126,7 @@ export default function NewClubPage() {
           Volver a Clubes
         </Link>
       </div>
-      <Card className="max-w-2xl mx-auto border-none bg-secondary/40">
+      <Card className="max-w-2xl mx-auto border-none bg-light text-primary shadow-xl">
         <CardHeader>
           <CardTitle className="text-2xl font-headline">Crear Nuevo Club</CardTitle>
           <CardDescription>Completa el formulario para registrar un nuevo club en la plataforma.</CardDescription>
@@ -142,7 +142,7 @@ export default function NewClubPage() {
                     <FormItem className="md:col-span-2">
                       <FormLabel>Nombre del Club*</FormLabel>
                       <FormControl>
-                        <Input className='border-none bg-secondary/40' placeholder="Ej: Club Atlético Boca Juniors" {...field} />
+                        <Input className='border-none bg-light text-primary shadow-xl' placeholder="Ej: Club Atlético Boca Juniors" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -157,7 +157,7 @@ export default function NewClubPage() {
                         <FormLabel>País*</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
-                            <SelectTrigger className='border-none bg-secondary/40'>
+                            <SelectTrigger className='border-none bg-light text-primary shadow-xl'>
                                 <SelectValue placeholder="Seleccioná tu país" />
                             </SelectTrigger>
                             </FormControl>
@@ -195,7 +195,7 @@ export default function NewClubPage() {
                     <FormItem>
                       <FormLabel>CUIT / Identificador Fiscal*</FormLabel>
                       <FormControl>
-                        <Input className='border-none bg-secondary/40' placeholder="Ej: 30-12345678-9" {...field} />
+                        <Input className='border-none bg-light text-primary shadow-xl' placeholder="Ej: 30-12345678-9" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -212,7 +212,7 @@ export default function NewClubPage() {
                           <PopoverTrigger asChild>
                             <div className="relative">
                               <Input
-                              className='border-none bg-secondary/40'
+                              className='border-none bg-light text-primary shadow-xl'
                                 value={addressQuery}
                                 placeholder="Ej: Brandsen 805, CABA"
                                 onChange={(e) => handleAddressChange(e.target.value)}
@@ -264,7 +264,7 @@ export default function NewClubPage() {
                     <FormItem>
                       <FormLabel>Ciudad</FormLabel>
                       <FormControl>
-                        <Input className='border-none bg-secondary/40' placeholder="Ej: CABA" {...field} />
+                        <Input className='border-none bg-light text-primary shadow-xl' placeholder="Ej: CABA" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -278,7 +278,7 @@ export default function NewClubPage() {
                     <FormItem>
                       <FormLabel>Teléfono</FormLabel>
                       <FormControl>
-                        <Input className='border-none bg-secondary/40' placeholder="Ej: 11-4309-4700" {...field} />
+                        <Input className='border-none bg-light text-primary shadow-xl' placeholder="Ej: 11-4309-4700" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -292,7 +292,7 @@ export default function NewClubPage() {
                     <FormItem className="md:col-span-2">
                       <FormLabel>Email de Contacto*</FormLabel>
                       <FormControl>
-                        <Input className='border-none bg-secondary/40' type="email" placeholder="contacto@club.com" {...field} />
+                        <Input className='border-none bg-light text-primary shadow-xl' type="email" placeholder="contacto@club.com" {...field} />
                       </FormControl>
                        <p className="text-xs text-muted-foreground">A este email llegarán las notificaciones importantes.</p>
                       <FormMessage />
@@ -317,7 +317,7 @@ export default function NewClubPage() {
                             render={({ field }) => (
                                 <FormItem>
                                 <FormControl>
-                                    <Button asChild variant="outline" className='border-none bg-secondary/40'>
+                                    <Button asChild variant="outline" className='border-none bg-light text-primary shadow-xl'>
                                         <label htmlFor="logo-upload" className="cursor-pointer">
                                             <Upload className="mr-2 h-4 w-4" />
                                             Subir Logo
@@ -338,7 +338,7 @@ export default function NewClubPage() {
                   control={form.control}
                   name="acceptTerms"
                   render={({ field }) => (
-                    <FormItem className="md:col-span-2 flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4 border-none bg-secondary/40">
+                    <FormItem className="md:col-span-2 flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4 border-none bg-light text-primary shadow-xl">
                       <FormControl>
                         <Checkbox checked={field.value} onCheckedChange={field.onChange} />
                       </FormControl>

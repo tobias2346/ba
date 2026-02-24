@@ -22,7 +22,7 @@ const NavTags = ({ selectedIndex, tags }: { selectedIndex: number; tags: string[
       <ul className='flex items-center gap-x-4 text-base'>
         {tags.map((tag, i) => (
           <React.Fragment key={tag}>
-            <li className={i === selectedIndex ? 'text-primary' : 'text-light hidden md:block'}>
+            <li className={i === selectedIndex ? 'text-primary' : 'text-primary hidden md:block'}>
               {tag}
             </li>
             {/* Renderiza la flecha solo si no es el último tag */}

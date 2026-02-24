@@ -47,7 +47,7 @@ export function Header() {
                   href={link.href}
                   className={`${isActive
                     ? "text-primary"
-                    : "text-slate-200 hover:text-primary"
+                    : "text-primary/70 hover:text-primary"
                     }`}
                 >
                   {link.label}

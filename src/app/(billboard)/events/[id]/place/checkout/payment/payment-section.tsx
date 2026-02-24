@@ -321,8 +321,8 @@ const PaymentSection = () => {
   return (
     <>
       {/* Detalle */}
-      <article className="w-full h-auto flex flex-col justify-start items-start gap-3 p-4 shadow md:bg-slate-800 rounded-xl text-slate-200">
-        <h5 className="text-lg text-light font-semibold font-headline my-1">
+      <article className="w-full h-auto flex flex-col justify-start items-start gap-3 p-4  md:bg-light rounded-xl shadow-xl text-primary">
+        <h5 className="text-lg text-primary font-semibold font-headline my-1">
           Detalle de la {isFreeOrder ? "adquisición" : "compra"}
         </h5>
 
@@ -360,7 +360,7 @@ const PaymentSection = () => {
           </div>
         )}
 
-        <div className="w-full flex justify-between items-center mt-4 text-xl font-semibold text-light font-headline">
+        <div className="w-full flex justify-between items-center mt-4 text-xl font-semibold text-primary font-headline">
           <h4>Total</h4>
           <h4>${totals.total}</h4>
         </div>
@@ -368,7 +368,7 @@ const PaymentSection = () => {
 
       {/* 🔒 Ocultar promo si la orden es gratuita */}
       {!isFreeOrder && (
-        <article className="w-full flex flex-col gap-4 shadow rounded-xl md:bg-slate-800 p-4 text-slate-200">
+        <article className="w-full flex flex-col gap-4 shadow rounded-xl md:bg-light p-4 text-primary">
           {!hasPromo && <h5>¿Tenés código promocional?</h5>}
           <div className="flex w-full h-14 md:h-auto gap-4 ">
             <div className="bg-dark flex items-center justify-between rounded-lg gap-x-4 w-1/2 md:w-max lg:w-3/4 xl:w-3/5 2xl:w-1/2">
@@ -394,7 +394,7 @@ const PaymentSection = () => {
                       ? `Código aplicado: ${promo!.code}`
                       : "Ingresá tu código"
                   }
-                  className="w-full md:grow h-full px-2 bg-transparent"
+                  className="w-full md:grow h-full px-2"
                 />
               )}
             </div>
@@ -422,13 +422,13 @@ const PaymentSection = () => {
           <h2 className=" font-semibold text-lg font-headline">
             Selecciona método de pago
           </h2>
-          <div className="w-full h-auto flex items-center justify-around flex-wrap p-4 rounded-xl md:bg-slate-800 gap-4">
+          <div className="w-full h-auto flex items-center justify-around flex-wrap p-4 rounded-xl md:bg-light shadow-xl gap-4">
             {paymentMethods.map((method) => (
               <button
                 type="button"
                 key={method.id}
                 className={cn(
-                  "bg-dark rounded-xl flex items-center justify-center w-80 h-20",
+                  "bg-secondary rounded-xl flex items-center justify-center w-80 h-20",
                   selectedMethod === method.id && "bg-primary"
                 )}
                 onClick={() => setSelectedMethod(method.id)}

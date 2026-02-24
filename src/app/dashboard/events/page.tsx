@@ -226,7 +226,7 @@ export default function EventsListPage() {
 
   return (
     <>
-      <Card className="border-none bg-secondary/20">
+      <Card className="border-none bg-light text-primary shadow-xl">
         <CardHeader className="flex flex-row items-center justify-between">
           <div className="flex items-center gap-x-4">
             <CardTitle>Partidos</CardTitle>
@@ -263,7 +263,7 @@ export default function EventsListPage() {
           <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
             <ClubFilter selectedClub={selectedClub} onSelectedClubChange={setSelectedClub} />
             <Select value={filters.categoryId} onValueChange={(val) => handleFilterChange('categoryId', val)} className="border-none">
-              <SelectTrigger className="w-[180px] border-none bg-secondary/20">
+              <SelectTrigger className="w-[180px] border-none bg-light text-primary shadow-xl">
                 <SelectValue placeholder="Filtrar por categoría" />
               </SelectTrigger>
               <SelectContent >
@@ -388,7 +388,7 @@ export default function EventsListPage() {
                 {typedEvents.map((event) => (
                   <Card
                     key={event.id}
-                    className="border-none bg-secondary/40"
+                    className="border-none bg-light text-primary shadow-xl"
                     onClick={() => handleRowClick(event)}
                   >
                     <CardContent className="p-4 space-y-3">

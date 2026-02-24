@@ -2,7 +2,7 @@
 export default function PrivacyPolicyPage() {
   return (
     <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 font-body">
-      <div className="max-w-4xl mx-auto text-light/90">
+      <div className="max-w-4xl mx-auto text-primary">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-10 font-headline">
           Políticas de Privacidad
         </h1>

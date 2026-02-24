@@ -380,7 +380,7 @@ export function SectorMapStep({ formData, updateFormData }: SectorMapStepProps) 
         <div>
           <Label>Cantidad de Tribunas*</Label>
           <Select onValueChange={handleStandCountChange} value={formData.standCount.toString()}>
-            <SelectTrigger className="w-full mt-2 border-none bg-secondary/40">
+            <SelectTrigger className="w-full mt-2 border-none bg-light text-primary shadow-xl">
               <SelectValue placeholder="Seleccionar cantidad" />
             </SelectTrigger>
             <SelectContent className='border-none bg-secondary'>
@@ -401,7 +401,7 @@ export function SectorMapStep({ formData, updateFormData }: SectorMapStepProps) 
           onValueChange={setOpenAccordionItem}
         >
           {(formData.standDetails || []).map((detail) => (
-            <AccordionItem key={`stand-${String(detail.id)}`} value={`stand-${String(detail.id)}`} className="rounded-md px-4 border-none bg-secondary/40">
+            <AccordionItem key={`stand-${String(detail.id)}`} value={`stand-${String(detail.id)}`} className="rounded-md px-4 border-none bg-light text-primary shadow-xl">
               <AccordionTrigger className="hover:no-underline [&[data-state=open]]:pb-0">
                 <span className="font-semibold">{detail.name || `Tribuna sin nombre`}</span>
               </AccordionTrigger>
@@ -409,7 +409,7 @@ export function SectorMapStep({ formData, updateFormData }: SectorMapStepProps) 
                 <div className="space-y-2">
                   <Label>Nombre Tribuna*</Label>
                   <Input
-                    className='border-none bg-secondary/40'
+                    className='border-none bg-light text-primary shadow-xl'
                     value={detail.name}
                     onChange={(e) => handleStandDetailChange(detail.id as any, 'name', e.target.value)}
                     placeholder="Ej: Platea Alta Sector A"
@@ -422,7 +422,7 @@ export function SectorMapStep({ formData, updateFormData }: SectorMapStepProps) 
                     onValueChange={(val: StandOrientation) => handleStandDetailChange(detail.id as any, 'orientation', val)}
                     value={(detail.orientation as any) || undefined}
                   >
-                    <SelectTrigger className='border-none bg-secondary/40'>
+                    <SelectTrigger className='border-none bg-light text-primary shadow-xl'>
                       <SelectValue placeholder="Seleccionar orientación" />
                     </SelectTrigger>
                     <SelectContent className='border-none bg-secondary'>
@@ -442,7 +442,7 @@ export function SectorMapStep({ formData, updateFormData }: SectorMapStepProps) 
                     value={(detail.type as any) || ''}
                     disabled={!detail.orientation}
                   >
-                    <SelectTrigger className='border-none bg-secondary/40'>
+                    <SelectTrigger className='border-none bg-light text-primary shadow-xl'>
                       <SelectValue placeholder="Seleccionar tipo" />
                     </SelectTrigger>
                     <SelectContent className='border-none bg-secondary'>
@@ -462,7 +462,7 @@ export function SectorMapStep({ formData, updateFormData }: SectorMapStepProps) 
                       onValueChange={(val) => handleSectorCountChange(detail.id as any, parseInt(val))}
                       value={detail.sectors?.length.toString() || '0'}
                     >
-                      <SelectTrigger className='border-none bg-secondary/40'>
+                      <SelectTrigger className='border-none bg-light text-primary shadow-xl'>
                         <SelectValue placeholder="Seleccionar cantidad" />
                       </SelectTrigger>
                       <SelectContent className='border-none bg-secondary'>
@@ -480,7 +480,7 @@ export function SectorMapStep({ formData, updateFormData }: SectorMapStepProps) 
                   <div key={`sector-${String(sector.id)}`} className="space-y-2 border-t pt-4">
                     <Label>Nombre del Sector {sectorIndex + 1}*</Label>
                     <Input
-                      className='border-none bg-secondary/40'
+                      className='border-none bg-light text-primary shadow-xl'
                       value={sector.name}
                       onChange={(e) => handleSectorNameChange(detail.id as any, sector.id as any, e.target.value)}
                       placeholder="Ej: Sector A"
@@ -490,7 +490,7 @@ export function SectorMapStep({ formData, updateFormData }: SectorMapStepProps) 
                       <Label>Filas*</Label>
                       <div
                         className={cn(
-                          'space-y-3 rounded-md border p-4  border-none bg-secondary/20',
+                          'space-y-3 rounded-md border p-4  border-none bg-light text-primary shadow-xl',
                           sector.rows.length === 0 && 'text-center text-sm text-muted-foreground py-6'
                         )}
                       >
@@ -499,7 +499,7 @@ export function SectorMapStep({ formData, updateFormData }: SectorMapStepProps) 
                         {sector.rows.map((row) => (
                           <div key={String(row.id)} className="grid grid-cols-[1fr_1fr_auto] gap-2 items-center">
                             <Input
-                              className='border-none bg-secondary/40'
+                              className='border-none bg-light text-primary shadow-xl'
                               disabled
                               value={row.label}
                               onChange={(e) => handleRowChange(detail.id as any, sector.id as any, row.id as any, 'label', e.target.value)}
@@ -511,7 +511,7 @@ export function SectorMapStep({ formData, updateFormData }: SectorMapStepProps) 
                               }
                               value={row.seatsCount.toString()}
                             >
-                              <SelectTrigger className='border-none bg-secondary/40'>
+                              <SelectTrigger className='border-none bg-light text-primary shadow-xl'>
                                 <SelectValue placeholder="Asientos" />
                               </SelectTrigger>
                               <SelectContent className='border-none bg-secondary'>

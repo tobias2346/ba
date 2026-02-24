@@ -23,7 +23,7 @@ export function ClubFilter({ selectedClub, onSelectedClubChange, className }: Cl
 
   return (
     <Select value={selectedClub} onValueChange={onSelectedClubChange}>
-      <SelectTrigger className={cn("w-auto min-w-[250px] border-none bg-secondary/40", className)}>
+      <SelectTrigger className={cn("w-auto min-w-[250px] border-none bg-light text-primary shadow-xl", className)}>
         <SelectValue placeholder="Filtrar por club" />
       </SelectTrigger>
       <SelectContent className="bg-slate-800 border-none">

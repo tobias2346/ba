@@ -14,7 +14,7 @@ interface StatCardProps {
 
 export function StatCard({ title, value, description, icon }: StatCardProps) {
   return (
-    <Card className="border-none bg-secondary/50">
+    <Card className="border-none bg-light text-primary shadow-xl">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-sm font-medium font-headline">
           {title}

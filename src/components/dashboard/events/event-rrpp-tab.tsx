@@ -122,7 +122,7 @@ export function EventRrppTab({ storeId }: Props) {
   return (
     <>
       <div className="mt-6 space-y-6">
-        <Card className='border-none bg-secondary/20'>
+        <Card className='border-none bg-light text-primary shadow-xl'>
           <CardHeader className="flex flex-col md:flex-row md:items-center space-y-3 justify-between">
             <div className='space-y-2'>
               <CardTitle>RRPP del Evento</CardTitle>
@@ -135,7 +135,7 @@ export function EventRrppTab({ storeId }: Props) {
                 onValueChange={setSelectedRrppId}
                 disabled={!storeId || isBusy || available.length === 0}
               >
-                <SelectTrigger className="w-[260px] border-none bg-secondary/40">
+                <SelectTrigger className="w-[260px] border-none bg-light text-primary shadow-xl">
                   <SelectValue placeholder={storeId ? "Seleccionar RRPP para agregar" : "Seleccioná un club del evento"} />
                 </SelectTrigger>
                 <SelectContent className='border-none'>
@@ -174,7 +174,7 @@ export function EventRrppTab({ storeId }: Props) {
                     return (
                       <Card
                         key={rrpp.id}
-                        className="border-none bg-secondary/40"
+                        className="border-none bg-light text-primary shadow-xl"
                       >
                         <CardContent className="p-4 space-y-3">
                           <div className="flex items-start gap-3">

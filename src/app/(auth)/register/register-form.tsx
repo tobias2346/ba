@@ -394,7 +394,7 @@ const RegisterForm = () => {
 
           <Button
             type="submit"
-            className="w-full text-lg"
+            className="w-full text-lg bg-light shadow-md"
             disabled={actionLoading || !form.watch("acceptTerms")}
           >
             {actionLoading && <Spinner size="sm" className="mr-2" />}

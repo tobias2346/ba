@@ -68,7 +68,7 @@ export function HeroSlider({ data }) {
                       src="/icons/calendar.svg"
                       alt="Calendario"
                     />
-                    <p className=" max-w-2xl text-base text-neutral-200 drop-shadow-sm">
+                    <p className=" max-w-2xl text-base text-primary drop-shadow-sm">
                       {slide.startDate}
                     </p>
                   </div>

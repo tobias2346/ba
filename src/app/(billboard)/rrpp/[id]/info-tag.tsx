@@ -4,7 +4,7 @@ import React from 'react'
 const InfoTag = ({number, text}) => {
   return (
     <div className='flex items-center gap-4 w-64 h-16 bg-background rounded-lg shadow-lg px-4'>
-      <div className='flex justify-center items-center bg-secondary/50 rounded-full h-10 w-10'>
+      <div className='flex justify-center items-center bg-light text-primary shadow-xl rounded-full h-10 w-10'>
       <Image
         src='/icons/money.svg'
         width={22}

@@ -80,7 +80,7 @@ export default function ClubDetailPage() {
             className="w-80 md:w-full flex flex-nowrap items-center justify-start overflow-x-auto overflow-y-hidden gap-2 p-1 md:justify-start scrollbar-hide "
           >
             <TabsTrigger
-              className="bg-secondary/40 py-2 whitespace-nowrap"
+              className="bg-light text-primary shadow-xl py-2 whitespace-nowrap"
               value="general"
             >
               Configuración General
@@ -88,7 +88,7 @@ export default function ClubDetailPage() {
 
             {user?.role === 'super-admin' && (
               <TabsTrigger
-                className="bg-secondary/40 py-2 whitespace-nowrap"
+                className="bg-light text-primary shadow-xl py-2 whitespace-nowrap"
                 value="payment"
               >
                 Plataforma de Pago
@@ -97,7 +97,7 @@ export default function ClubDetailPage() {
 
             {user?.role?.includes('admin') && (
               <TabsTrigger
-                className="bg-secondary/40 py-2 whitespace-nowrap"
+                className="bg-light text-primary shadow-xl py-2 whitespace-nowrap"
                 value="percentages"
               >
                 Costo de Servicio
@@ -105,7 +105,7 @@ export default function ClubDetailPage() {
             )}
 
             <TabsTrigger
-              className="bg-secondary/40 py-2 whitespace-nowrap"
+              className="bg-light text-primary shadow-xl py-2 whitespace-nowrap"
               value="access-control"
             >
               Control de Acceso

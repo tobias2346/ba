@@ -83,7 +83,7 @@ export function EventCard({
           className="w-full h-1/2 object-cover rounded-t-xl"
         />
 
-        <article className={`h-1/2 flex flex-col font-headline items-start justify-start py-2 px-6 gap-y-1 bg-slate-800 ${!myTicket && 'rounded-b-xl'}`}>
+        <article className={`h-1/2 flex flex-col font-headline items-start justify-start py-2 px-6 gap-y-1 bg-light ${!myTicket && 'rounded-b-xl'}`}>
           <div className="flex w-full justify-between items-center">
             <h5
               className={`${extend ? "text-sm font-medium" : "text-xs font-medium"

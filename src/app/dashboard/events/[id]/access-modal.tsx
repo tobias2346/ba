@@ -210,7 +210,7 @@ const AccessModal = ({ open, setOpen, id, eventData }: AccessModalProps) => {
             <h4 className='text-sm font-semibold text-light ml-1 mb-1'>Filtrar por propietario</h4>
             <input
               placeholder='Buscar por propietario...'
-              className='w-80 h-10 px-3 shadow rounded text-light bg-secondary/40'
+              className='w-80 h-10 px-3 shadow rounded text-light bg-light text-primary shadow-xl'
               value={search}
               onChange={e => setSearch(e.target.value)}
             />

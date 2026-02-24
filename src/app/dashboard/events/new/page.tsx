@@ -232,7 +232,7 @@ function NewEventPageInner() {
           </div>
 
           <div className="lg:col-span-2">
-            <Card className='border-none bg-secondary/20'>
+            <Card className='border-none bg-light text-primary shadow-xl'>
               <CardHeader>
                 <CardTitle className="text-2xl font-headline">{isEditing ? 'Editar Partido' : steps[currentStep].name}</CardTitle>
               </CardHeader>

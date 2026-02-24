@@ -151,7 +151,7 @@ function NewStadiumPageInner() {
           </Link>
         </div>
 
-        <Card className="lg:col-span-1 border-none bg-secondary/20">
+        <Card className="lg:col-span-1 border-none bg-light text-primary shadow-xl">
           <CardHeader>
             <CardTitle className="text-2xl font-headline">
               {isEditing ? 'Editar Estadio' : 'Crear Nuevo Estadio'}
@@ -161,7 +161,7 @@ function NewStadiumPageInner() {
             <div className="space-y-2">
               <Label htmlFor="stadiumName">Nombre del Estadio*</Label>
               <Input
-                className='border-none bg-secondary/40'
+                className='border-none bg-light text-primary shadow-xl'
                 id="stadiumName"
                 value={formData.stadiumName}
                 onChange={(e) => updateFormData({ stadiumName: e.target.value })}
@@ -174,7 +174,7 @@ function NewStadiumPageInner() {
                 <SelectTrigger>
                   <SelectValue placeholder="Seleccionar tipo" />
                 </SelectTrigger>
-                <SelectContent className='border-none bg-secondary/40'>
+                <SelectContent className='border-none bg-light text-primary shadow-xl'>
                   <SelectItem value="numerated">Numerado</SelectItem>
                   <SelectItem value="sectorized">Sectorizado</SelectItem>
                 </SelectContent>
@@ -198,7 +198,7 @@ function NewStadiumPageInner() {
 
       <div className="hidden lg:block w-1/2 p-8">
         {showStadiumPreview && (
-          <Card className="h-full flex flex-col border-none bg-secondary/40">
+          <Card className="h-full flex flex-col border-none bg-light text-primary shadow-xl">
             <CardHeader>
               <CardTitle className='text-lg'>Vista Previa del Estadio</CardTitle>
             </CardHeader>

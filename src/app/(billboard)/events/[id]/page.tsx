@@ -397,7 +397,7 @@ export default function EventDetailPage() {
             </div>
           )}
 
-          <div className="w-full md:w-80 h-auto bg-slate-800 rounded-lg flex flex-col items-center justify-start gap-4 p-4 text-light">
+          <div className="w-full md:w-80 h-auto bg-light shadow-lg text-primary rounded-lg flex flex-col items-center justify-start gap-4 p-4 text-light">
             <div className="flex flex-row gap-x-4 items-start">
               <Image
                 src="/icons/streaming.svg"
@@ -428,8 +428,8 @@ export default function EventDetailPage() {
 
         <article className="flex flex-col gap-4 grow">
           <h6 className="my-2 font-semibold block md:hidden">Descripcion</h6>
-          <div className="flex flex-col items-start bg-slate-800 p-3 rounded-lg h-min grow">
-            <p className="whitespace-pre-wrap text-light">{event?.description}</p>
+          <div className="flex flex-col items-start bg-light shadow-lg text-primary p-3 rounded-lg h-min grow">
+            <p className="whitespace-pre-wrap">{event?.description}</p>
           </div>
 
           <div className="flex flex-col gap-2">

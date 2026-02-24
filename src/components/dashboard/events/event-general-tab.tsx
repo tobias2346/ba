@@ -175,7 +175,7 @@ export function EventGeneralTab({ eventData, onUpdate, onRefresh }: EventGeneral
 
   return (
     <div className="mt-6 space-y-6">
-      <Card className='bg-secondary/20 border-none'>
+      <Card className='bg-light text-primary shadow-xl border-none'>
         <CardHeader className="flex flex-col md:flex-row space-y-5 md:items-center justify-between">
           <CardTitle>Configuración de Cartelera</CardTitle>
           <div className="flex items-center gap-6">
@@ -220,7 +220,7 @@ export function EventGeneralTab({ eventData, onUpdate, onRefresh }: EventGeneral
       </Card>
       {
         eventData.type === 'numerated' ?
-          <Card className='border-none bg-secondary/20'>
+          <Card className='border-none bg-light text-primary shadow-xl'>
             <CardHeader className="flex flex-row items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="bg-primary/10 text-primary p-2 rounded-lg">
@@ -303,7 +303,7 @@ export function EventGeneralTab({ eventData, onUpdate, onRefresh }: EventGeneral
           :
           <>
             {/* Combos */}
-            <Card className='border-none bg-secondary/20'>
+            <Card className='border-none bg-light text-primary shadow-xl'>
               <CardHeader className="flex flex-row items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="bg-primary/10 text-primary p-2 rounded-lg">
@@ -323,7 +323,7 @@ export function EventGeneralTab({ eventData, onUpdate, onRefresh }: EventGeneral
                       {combos.map((combo) => (
                         <Card
                           key={combo.id}
-                          className="border-none bg-secondary/40"
+                          className="border-none bg-light text-primary shadow-xl"
                         >
                           <CardContent className="p-4 space-y-3">
                             <div className="flex items-start gap-3">
@@ -456,7 +456,7 @@ export function EventGeneralTab({ eventData, onUpdate, onRefresh }: EventGeneral
             </Card>
 
             {/* Tickets */}
-            <Card className='border-none bg-secondary/20'>
+            <Card className='border-none bg-light text-primary shadow-xl'>
               <CardHeader className="flex flex-row items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="bg-primary/10 text-primary p-2 rounded-lg">
@@ -476,7 +476,7 @@ export function EventGeneralTab({ eventData, onUpdate, onRefresh }: EventGeneral
                       {tickets.map((ticket) => (
                         <Card
                           key={ticket.id}
-                          className="border-none bg-secondary/40"
+                          className="border-none bg-light text-primary shadow-xl"
                         >
                           <CardContent className="p-4 space-y-3">
                             <div className="flex items-start gap-3">
@@ -615,7 +615,7 @@ export function EventGeneralTab({ eventData, onUpdate, onRefresh }: EventGeneral
       }
 
       {/* Totalizadores */}
-      <Card className='border-none bg-secondary/20'>
+      <Card className='border-none bg-light text-primary shadow-xl'>
         <CardHeader>
           <CardTitle>Totalizadores</CardTitle>
         </CardHeader>

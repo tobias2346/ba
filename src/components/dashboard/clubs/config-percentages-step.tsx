@@ -45,7 +45,7 @@ export function ConfigPercentagesStep({ clubData, onUpdate }: ConfigPercentagesS
   };
 
   return (
-    <Card className="mt-4 border-none bg-secondary/20">
+    <Card className="mt-4 border-none bg-light text-primary shadow-xl">
       <CardHeader>
         <CardTitle>Costo de Servicio</CardTitle>
         <CardDescription>Define las comisiones por servicio que se aplicarán a las ventas.</CardDescription>
@@ -65,7 +65,7 @@ export function ConfigPercentagesStep({ clubData, onUpdate }: ConfigPercentagesS
                   type="number"
                   value={percentages.tickets}
                   onChange={e => handlePercentageChange('tickets', e.target.value)}
-                className="pl-4 pr-8 border-none bg-secondary/40"
+                className="pl-4 pr-8 border-none bg-light text-primary shadow-xl"
                 />
                 <Percent className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               </div>
@@ -78,7 +78,7 @@ export function ConfigPercentagesStep({ clubData, onUpdate }: ConfigPercentagesS
                   type="number"
                   value={percentages.combos}
                   onChange={e => handlePercentageChange('combos', e.target.value)}
-                  className="pl-4 pr-8 border-none bg-secondary/40"
+                  className="pl-4 pr-8 border-none bg-light text-primary shadow-xl"
                 />
                  <Percent className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               </div>

@@ -118,7 +118,7 @@ export function CarouselFormModal({ isOpen, onClose, initialData }: CarouselForm
                   <FormItem>
                     <FormLabel>Nombre del Carrusel</FormLabel>
                     <FormControl>
-                      <Input className='bg-secondary/40 border-none' {...field} placeholder="Ej: Partidos Destacados" />
+                      <Input className='bg-light text-primary shadow-xl border-none' {...field} placeholder="Ej: Partidos Destacados" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -132,7 +132,7 @@ export function CarouselFormModal({ isOpen, onClose, initialData }: CarouselForm
                     <FormLabel>Posición</FormLabel>
                     <FormControl>
                       <Input
-                      className='bg-secondary/40 border-none'
+                      className='bg-light text-primary shadow-xl border-none'
                         type="number"
                         inputMode="numeric"
                         min={1}
@@ -178,7 +178,7 @@ export function CarouselFormModal({ isOpen, onClose, initialData }: CarouselForm
               control={form.control}
               name="active"
               render={({ field }) => (
-                <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4 bg-secondary/40 border-none">
+                <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4 bg-light text-primary shadow-xl border-none">
                   <div className="space-y-0.5">
                     <FormLabel className="text-base">Mostrar en Cartelera</FormLabel>
                     <p className="text-sm text-muted-foreground">

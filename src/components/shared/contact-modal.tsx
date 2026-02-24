@@ -43,7 +43,7 @@ const ContactModal = ({ open, setOpen, preSelected = '' }) => {
       <h2 className="text-lg font-semibold text-center">
         Envíanos tu consulta!
       </h2>
-      <p className="text-sm text-light/60 text-center">
+      <p className="text-sm text-primary text-center">
         Responderemos a la brevedad
       </p>
 
@@ -53,7 +53,7 @@ const ContactModal = ({ open, setOpen, preSelected = '' }) => {
           type="email"
           placeholder="Email*"
           required
-          className="w-full h-11 rounded-md px-3 bg-background focus:outline-none"
+          className="w-full h-11 rounded-md px-3 bg-primary/30 text-light focus:outline-none"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -61,13 +61,13 @@ const ContactModal = ({ open, setOpen, preSelected = '' }) => {
           type="text"
           placeholder="Nombre*"
           required
-          className="w-full h-11 rounded-md px-3 bg-background focus:outline-none"
+          className="w-full h-11 rounded-md px-3 bg-primary/30 text-light focus:outline-none"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
 
         <select
-          className="w-full h-11 rounded-md px-3 bg-background focus:outline-none"
+          className="w-full h-11 rounded-md px-3 bg-primary/30 text-light focus:outline-none"
           required
           value={type}
           onChange={(e) => setType(e.target.value)}
@@ -83,7 +83,7 @@ const ContactModal = ({ open, setOpen, preSelected = '' }) => {
         <textarea
           placeholder="Mensaje"
           rows={4}
-          className="w-full rounded-md px-3 py-2 bg-background focus:outline-none"
+          className="w-full rounded-md px-3 py-2 bg-primary/30 text-light focus:outline-none"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
