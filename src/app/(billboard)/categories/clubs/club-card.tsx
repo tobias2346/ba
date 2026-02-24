@@ -28,7 +28,7 @@ interface ClubCardProps {
 const ClubCard = ({ club }: ClubCardProps) => {
   return (
     <Link
-      className="w-36 md:w-48 h-36 md:h-48 rounded-xl flex flex-col justify-center items-center bg-slate-800 hover:bg-primary/50 transition-all duration-100"
+      className="w-36 md:w-48 h-36 md:h-48 rounded-xl flex flex-col justify-center items-center bg-light hover:bg-primary/50 shadow-xl transition-all duration-100"
       href={`/categories/clubs/${club.id}`}
     >
       <Image

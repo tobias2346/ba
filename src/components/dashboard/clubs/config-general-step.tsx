@@ -139,7 +139,7 @@ export function ConfigGeneralStep({ clubData, onUpdate }: ConfigGeneralStepProps
   const { isDirty } = form.formState;
 
   return (
-    <Card className="border-none bg-secondary/20">
+    <Card className="border-none bg-light text-primary shadow-xl">
       <CardHeader className="flex flex-col md:flex-row items-center justify-between">
         <div>
             <CardTitle>Configuración General</CardTitle>
@@ -180,8 +180,8 @@ export function ConfigGeneralStep({ clubData, onUpdate }: ConfigGeneralStepProps
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
-              <FormField control={form.control} name="name"  render={({ field }) => (<FormItem><FormLabel>Nombre del Club</FormLabel><FormControl><Input className=' border-none bg-secondary/40' {...field} /></FormControl><FormMessage /></FormItem>)} />
-              <FormField control={form.control} name="phone" render={({ field }) => (<FormItem><FormLabel>Teléfono</FormLabel><FormControl><Input className=' border-none bg-secondary/40' {...field} /></FormControl><FormMessage /></FormItem>)} />
+              <FormField control={form.control} name="name"  render={({ field }) => (<FormItem><FormLabel>Nombre del Club</FormLabel><FormControl><Input className=' border-none bg-light text-primary shadow-xl' {...field} /></FormControl><FormMessage /></FormItem>)} />
+              <FormField control={form.control} name="phone" render={({ field }) => (<FormItem><FormLabel>Teléfono</FormLabel><FormControl><Input className=' border-none bg-light text-primary shadow-xl' {...field} /></FormControl><FormMessage /></FormItem>)} />
               <FormField control={form.control} name="category" render={({ field }) => (<FormItem><FormLabel>Categoría</FormLabel><CategorySelect value={field.value} onChange={field.onChange} /><FormMessage /></FormItem>)} />
               <FormField
                   control={form.control}
@@ -200,7 +200,7 @@ export function ConfigGeneralStep({ clubData, onUpdate }: ConfigGeneralStepProps
                                 onKeyDown={onKeyDownInput}
                                 autoComplete="off"
                                 spellCheck={false}
-                                className=' border-none bg-secondary/40'
+                                className=' border-none bg-light text-primary shadow-xl'
                               />
                                {loadingPlaces && <Loader2 className="absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4 animate-spin text-muted-foreground" />}
                             </div>

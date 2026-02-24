@@ -301,7 +301,7 @@ export default function TransactionsListPage() {
 
   return (
     <>
-      <Card className="border-none bg-secondary/20">
+      <Card className="border-none bg-light text-primary shadow-xl">
         <CardHeader className="flex flex-col gap-4">
           <div className="flex items-center gap-2">
             <DollarSign className="h-6 w-6" />
@@ -322,7 +322,7 @@ export default function TransactionsListPage() {
                     setFilters((p) => ({ ...p, eventId: v }))
                   }
                 >
-                  <SelectTrigger className="w-full sm:w-[180px] border-none bg-secondary/40">
+                  <SelectTrigger className="w-full sm:w-[180px] border-none bg-light text-primary shadow-xl">
                     <SelectValue placeholder="Evento" />
                   </SelectTrigger>
                   <SelectContent className="border-none">
@@ -342,7 +342,7 @@ export default function TransactionsListPage() {
                 value={filters.month}
                 onValueChange={(v) => setFilters((p) => ({ ...p, month: v }))}
               >
-                <SelectTrigger className="w-full sm:w-[150px] border-none bg-secondary/40">
+                <SelectTrigger className="w-full sm:w-[150px] border-none bg-light text-primary shadow-xl">
                   <SelectValue placeholder="Mes" />
                 </SelectTrigger>
                 <SelectContent className="border-none">
@@ -358,7 +358,7 @@ export default function TransactionsListPage() {
                 value={filters.year}
                 onValueChange={(v) => setFilters((p) => ({ ...p, year: v }))}
               >
-                <SelectTrigger className="w-full sm:w-[120px] border-none bg-secondary/40">
+                <SelectTrigger className="w-full sm:w-[120px] border-none bg-light text-primary shadow-xl">
                   <SelectValue placeholder="Año" />
                 </SelectTrigger>
                 <SelectContent className="border-none">
@@ -374,7 +374,7 @@ export default function TransactionsListPage() {
                 size="icon"
                 variant="outline"
                 onClick={handleExport}
-                className="w-full sm:w-10 border-none bg-secondary/40"
+                className="w-full sm:w-10 border-none bg-light text-primary shadow-xl"
               >
                 <Download className="h-4 w-4" />
               </Button>
@@ -384,7 +384,7 @@ export default function TransactionsListPage() {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
                 placeholder="Buscar por cliente"
-                className="pl-9 border-none bg-secondary/40"
+                className="pl-9 border-none bg-light text-primary shadow-xl"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
@@ -406,7 +406,7 @@ export default function TransactionsListPage() {
                 {transactions.map((trx: any) => (
                   <Card
                     key={trx.id}
-                    className="border-none bg-secondary/40 cursor-pointer"
+                    className="border-none bg-light text-primary shadow-xl cursor-pointer"
                     onClick={() =>
                       router.push(`/dashboard/transactions/${trx.id}`)
                     }
@@ -440,7 +440,7 @@ export default function TransactionsListPage() {
                           </DropdownMenuTrigger>
                           <DropdownMenuContent
                             align="end"
-                            className="border-none bg-secondary/40"
+                            className="border-none bg-light text-primary shadow-xl"
                           >
                             <DropdownMenuItem
                               onClick={(e) => {

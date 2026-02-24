@@ -8,7 +8,7 @@ const loading = () => {
       <div className="w-full lg:w-4/5 flex gap-4 p-2">
         <div className="flex flex-col w-full md:w-4/5 gap-y-4">
           <ClubDataLoading />
-          <h3 className="text-3xl font-semibold">Partidos del club</h3>
+          <h3 className="text-3xl font-semibold">Eventos del club</h3>
           <div className="w-full h-auto flex">
             <ClubEventsLoading />
           </div>

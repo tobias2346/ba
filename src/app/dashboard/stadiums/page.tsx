@@ -72,7 +72,7 @@ export default function StadiumsListPage() {
   };
 
   return (
-    <Card className="border-none bg-secondary/20">
+    <Card className="border-none bg-light text-primary shadow-xl">
       {/* ================= HEADER ================= */}
       <CardHeader className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-4">
@@ -112,7 +112,7 @@ export default function StadiumsListPage() {
               {stadiums.map((stadium: any) => (
                 <Card
                   key={stadium.id}
-                  className="border-none bg-secondary/40"
+                  className="border-none bg-light text-primary shadow-xl"
                 >
                   <CardContent className="p-4 space-y-3">
                     <div className="flex justify-between items-start">

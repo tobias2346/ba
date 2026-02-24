@@ -123,7 +123,7 @@ const EventTicket = ({ ticket }: { ticket: Checkout }) => {
   };
 
   return (
-    <section className="w-full h-auto p-1 border-none shadow rounded-lg font-body font-medium">
+    <section className="w-full h-auto p-1 border-none shadow-lg rounded-lg font-body font-medium">
       <button
         type="button"
         onClick={!isDisabled ? toggleTicket : undefined}
@@ -185,7 +185,7 @@ const EventTicket = ({ ticket }: { ticket: Checkout }) => {
                 {ticket.stock.aviable} restantes
               </p>
             </div>
-            <div className="bg-primary/10 flex justify-around items-center px-3 py-1.5 rounded-lg gap-x-4">
+            <div className="bg-primary/30 flex justify-around items-center px-3 py-1.5 rounded-lg gap-x-4">
               <button
                 type="button"
                 onClick={decreaseQuantity}

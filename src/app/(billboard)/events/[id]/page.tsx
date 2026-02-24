@@ -397,7 +397,7 @@ export default function EventDetailPage() {
             </div>
           )}
 
-          <div className="w-full md:w-80 h-auto bg-slate-800 rounded-lg flex flex-col items-center justify-start gap-4 p-4">
+          <div className="w-full md:w-80 h-auto bg-light shadow-lg text-primary rounded-lg flex flex-col items-center justify-start gap-4 p-4 text-light">
             <div className="flex flex-row gap-x-4 items-start">
               <Image
                 src="/icons/streaming.svg"
@@ -428,7 +428,7 @@ export default function EventDetailPage() {
 
         <article className="flex flex-col gap-4 grow">
           <h6 className="my-2 font-semibold block md:hidden">Descripcion</h6>
-          <div className="flex flex-col items-start bg-slate-800 p-3 rounded-lg h-min grow">
+          <div className="flex flex-col items-start bg-light shadow-lg text-primary p-3 rounded-lg h-min grow">
             <p className="whitespace-pre-wrap">{event?.description}</p>
           </div>
 
@@ -449,7 +449,7 @@ export default function EventDetailPage() {
                 src={mapSrc}
               />
             ) : (
-              <div className="rounded-lg bg-slate-900 p-4 text-sm text-slate-200">
+              <div className="rounded-lg bg-slate-900 p-4 text-sm">
                 Falta configurar <code>NEXT_PUBLIC_GOOGLE_MAPS_EMBED_KEY</code>.
               </div>
             )}

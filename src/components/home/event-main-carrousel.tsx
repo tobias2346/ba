@@ -7,7 +7,6 @@ interface EventCarouselProps {
 }
 
 export function MainEventCarousel({ events, title }: EventCarouselProps) {
-  console.log(events)
   return (
     <section className="w-full flex flex-col items-start justify-start gap-4 bg-secondary-foreground px-3 md:p-0">
       <h4 className="text-2xl xl:text-3xl font-semibold">{title}</h4>
@@ -38,7 +37,6 @@ export function MainEventCarousel({ events, title }: EventCarouselProps) {
             )
           })}
         </div>
-
       </div>
     </section>
   );

@@ -40,7 +40,7 @@ const Butaca = ({ handleSeatClick, selectedSeats, selectedSector, selectedStand,
   const handlePrevPage = () => setPage(prev => Math.max(prev - 1, 0))
 
   return (
-    <div className="w-full md:bg-secondary/40 rounded-lg shadow flex flex-col justify-center items-center p-6">
+    <div className="w-full md:bg-light text-primary shadow-xl rounded-lg shadow flex flex-col justify-center items-center p-6">
       <div className='w-full h-auto flex flex-col gap-y-8 md:gap-y-5 items-center p-1 mb-8 overflow-x-auto soft-scrollbar'>
 
         <h2 className="text-2xl font-bold font-headline text-primary">

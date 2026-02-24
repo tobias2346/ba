@@ -13,7 +13,7 @@ interface PaymentMethodCardProps {
 
 export function PaymentMethodCard({ name, logo, isConfigured, onConfigure }: PaymentMethodCardProps) {
     return (
-        <Card className="flex flex-col  border-none bg-secondary/20 hover:bg-primary/10">
+        <Card className="flex flex-col  border-none bg-light text-primary shadow-xl hover:bg-primary/10">
             <CardHeader className="flex-grow">
                 <div className="flex justify-center mb-4 h-12 items-center">
                     {logo}
@@ -33,7 +33,7 @@ export function PaymentMethodCard({ name, logo, isConfigured, onConfigure }: Pay
                 )}
             </CardContent>
             <CardFooter>
-                <Button variant="outline" className="w-full  border-none bg-secondary/40" onClick={onConfigure}>
+                <Button variant="outline" className="w-full  border-none bg-light text-primary shadow-xl" onClick={onConfigure}>
                     <Settings className="mr-2 h-4 w-4" />
                     {isConfigured ? 'Editar' : 'Configurar'}
                 </Button>

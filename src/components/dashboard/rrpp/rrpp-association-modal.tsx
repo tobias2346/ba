@@ -97,7 +97,7 @@ export function RrppAssociationModal({ isOpen, onClose }: RrppAssociationModalPr
             Busca un usuario por su email para asignarle el rol de RRPP.
           </DialogDescription>
         </DialogHeader>
-        <Alert className='bg-secondary/40 border-none'>
+        <Alert className='bg-light text-primary shadow-xl border-none'>
           <Info className="h-4 w-4" />
           <AlertDescription>
             Para poder asociar un RRPP, el usuario debe estar previamente registrado en la plataforma.
@@ -118,7 +118,7 @@ export function RrppAssociationModal({ isOpen, onClose }: RrppAssociationModalPr
                         {...field}
                         placeholder="Buscar por email..."
                         onBlur={handleEmailBlur}
-                        className="pl-9 bg-secondary/40 border-none"
+                        className="pl-9 bg-light text-primary shadow-xl border-none"
                         disabled={contextLoading || rrppLoading}
                       />
                       {isSearching && <Spinner size="sm" className="absolute right-3 top-1/2 -translate-y-1/2" />}

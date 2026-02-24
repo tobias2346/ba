@@ -90,7 +90,7 @@ export function EventHeader({ eventData }: EventHeaderProps) {
   }
 
   return (
-    <div className="bg-secondary/20 rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+    <div className="bg-light text-primary shadow-xl rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
         <div className="md:w-1/3 flex items-center justify-center bg-black/20 p-4">
              <Image 
                 src={eventData.flyer || 'https://placehold.co/600x400.png'} 

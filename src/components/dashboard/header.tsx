@@ -39,9 +39,9 @@ import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 const allNavItems = [
   { href: "/dashboard", icon: BarChart, label: "Estadísticas", roles: ['super-admin', 'admin', 'manager', 'data-analyst'] },
   { href: "/dashboard/clubs", icon: Shield, label: "Clubes", roles: ['super-admin', 'admin', 'manager'] },
-  { href: "/dashboard/events", icon: PartidosIcon, label: "Partidos", roles: ['super-admin', 'admin', 'manager'] },
+  { href: "/dashboard/events", icon: PartidosIcon, label: "Eventos", roles: ['super-admin', 'admin', 'manager'] },
   { href: "/dashboard/stadiums", icon: Landmark, label: "Estadios", roles: ['super-admin', 'admin', 'manager'] },
-  { href: "/dashboard/merch", icon: MerchIcon, label: "Merchandising", roles: ['super-admin', 'admin', 'manager'] },
+  { href: "/dashboard/merch", icon: MerchIcon, label: "Actividades", roles: ['super-admin', 'admin', 'manager'] },
   { href: "/dashboard/transactions", icon: DollarSign, label: "Transacciones", roles: ['super-admin', 'admin', 'manager'] },
   { href: "/dashboard/carousels", icon: GalleryHorizontal, label: "Carruseles", roles: ['super-admin', 'admin'] },
   { href: "/dashboard/users", icon: Users, label: "Usuarios", roles: ['super-admin', 'admin'] },

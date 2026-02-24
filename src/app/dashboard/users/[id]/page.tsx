@@ -90,7 +90,7 @@ export default function UserDetailPage() {
           <TabsTrigger value="transactions">Transacciones</TabsTrigger>
         </TabsList>
         <TabsContent value="personal">
-          <Card className='bg-secondary/20 border-none'>
+          <Card className='bg-light text-primary shadow-xl border-none'>
             <CardHeader>
               <CardTitle>Detalles del Perfil</CardTitle>
             </CardHeader>
@@ -113,14 +113,14 @@ export default function UserDetailPage() {
                 <div>
                   <Label htmlFor="email">Modificar Email</Label>
                   <div className="flex gap-2 mt-1">
-                    <Input className='bg-secondary/40 border-none' id="email" defaultValue={userDetail.email || ''} />
+                    <Input className='bg-light text-primary shadow-xl border-none' id="email" defaultValue={userDetail.email || ''} />
                     <Button>Guardar</Button>
                   </div>
                 </div>
                 <div>
                   <Label htmlFor="document">Modificar DNI</Label>
                   <div className="flex gap-2 mt-1">
-                    <Input className='bg-secondary/40 border-none' id="document" defaultValue={userDetail.document || ''} />
+                    <Input className='bg-light text-primary shadow-xl border-none' id="document" defaultValue={userDetail.document || ''} />
                     <Button>Guardar</Button>
                   </div>
                 </div>

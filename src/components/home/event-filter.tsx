@@ -84,7 +84,7 @@ const EventFilterDesktop = ({ setLoading, setData, data, setRawData }) => {
           <input
             value={inpu}
             type="text"
-            className="w-full grow rounded-lg bg-secondary py-3 px-4 pl-10"
+            className="w-full grow rounded-lg bg-primary text-light py-3 px-4 pl-10"
             placeholder="Buscar partido por titulo"
             onChange={onChange}
           />
@@ -114,7 +114,7 @@ const EventFilterDesktop = ({ setLoading, setData, data, setRawData }) => {
               <input
                 value={inpu}
                 type="text"
-                className="w-full rounded-lg bg-secondary py-2 px-4"
+                className="w-full rounded-lg bg-primary text-light py-2 px-4"
                 placeholder="Buscar partido por titulo"
                 onChange={onChange}
               />

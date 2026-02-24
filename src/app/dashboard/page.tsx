@@ -183,7 +183,7 @@ export default function DashboardPage() {
 
         <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
           <Select value={filters.year} onValueChange={setYear}>
-            <SelectTrigger className="w-full sm:w-[180px] border-none bg-secondary/40">
+            <SelectTrigger className="w-full sm:w-[180px] border-none bg-light text-primary shadow-xl">
               <SelectValue placeholder="Filtrar por año" />
             </SelectTrigger>
             <SelectContent className="border-none bg-slate-800">
@@ -196,7 +196,7 @@ export default function DashboardPage() {
           </Select>
 
           <Select value={filters.month} onValueChange={setMonth}>
-            <SelectTrigger className="w-full sm:w-[180px] border-none bg-secondary/40">
+            <SelectTrigger className="w-full sm:w-[180px] border-none bg-light text-primary shadow-xl">
               <SelectValue placeholder="Filtrar por mes" />
             </SelectTrigger>
             <SelectContent className="border-none bg-slate-800">
@@ -222,7 +222,7 @@ export default function DashboardPage() {
             onValueChange={setSelectedEvent}
             disabled={loadingEvents}
           >
-            <SelectTrigger className="w-full sm:w-[180px] border-none bg-secondary/40">
+            <SelectTrigger className="w-full sm:w-[180px] border-none bg-light text-primary shadow-xl">
               <SelectValue
                 placeholder={
                   loadingEvents ? "Cargando..." : "Filtrar por evento"
@@ -246,7 +246,7 @@ export default function DashboardPage() {
               loadingEvents || loadingTickets || filters.eventId === "all"
             }
           >
-            <SelectTrigger className="w-full sm:w-[180px] border-none bg-secondary/40">
+            <SelectTrigger className="w-full sm:w-[180px] border-none bg-light text-primary shadow-xl">
               <SelectValue
                 placeholder={
                   filters.eventId === "all"
@@ -306,7 +306,7 @@ export default function DashboardPage() {
       {/* CHARTS */}
       {/* ============================= */}
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-7">
-        <Card className="border-none bg-secondary/50 lg:col-span-4">
+        <Card className="border-none bg-light text-primary shadow-xl lg:col-span-4">
           <CardHeader>
             <CardTitle className="text-xl">Resumen de Ventas</CardTitle>
           </CardHeader>
@@ -315,7 +315,7 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
 
-        <Card className="border-none bg-secondary/50 lg:col-span-3">
+        <Card className="border-none bg-light text-primary shadow-xl lg:col-span-3">
           <CardHeader>
             <CardTitle className="text-xl">Ventas Recientes</CardTitle>
             <CardDescription>

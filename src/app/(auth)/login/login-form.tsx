@@ -149,7 +149,7 @@ const LoginForm = () => {
           </div>
         </div>
 
-        <button type="button" className="w-full bg-light flex justify-center items-center rounded-lg py-2 gap-x-4 text-dark transition-all duration-300 hover:bg-primary " onClick={handleGoogleLogin}>
+        <button type="button" className="w-full bg-secondary flex justify-center items-center rounded-lg py-2 gap-x-4 text-dark transition-all duration-300 hover:bg-primary " onClick={handleGoogleLogin}>
           <Image src='/brands/google.svg' height={30} width={30} alt="goolge icon" />
           <span className="font-semibold text-sm">Continua con Google</span>
         </button>

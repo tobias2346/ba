@@ -12,7 +12,7 @@ export function Logo({ alt, height, width }: LogoProps) {
     <Image
     height={height}
     width={width}
-    src='/logos/logo.svg'
+    src='/logos/logo.png'
     priority
     alt="Logo"
     className=" w-auto h-auto"

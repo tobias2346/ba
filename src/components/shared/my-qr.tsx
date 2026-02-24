@@ -36,7 +36,7 @@ export default function DynamicQR() {
 
   return (
     <div className="p-6 flex flex-col items-center gap-4 font-headline">
-      <div className="bg-[#313B45] p-5 rounded-xl shadow flex items-center justify-center">
+      <div className="bg-light shadow-xl p-5 rounded-xl flex items-center justify-center">
         {loading ? (
           <span className="text-slate-300 text-sm">Generando QR...</span>
         ) : (
@@ -46,7 +46,7 @@ export default function DynamicQR() {
       {user?.alias && (
         <>
           <h4 className="text-lg font-medium">{user.alias}</h4>
-          <p className="text-sm font-medium text-center text-slate-300">
+          <p className="text-sm font-medium text-center text-secondary">
             Este código QR es personal e intransferible. Utilizalo como credencial
             para acceder a todos tus eventos.
           </p>

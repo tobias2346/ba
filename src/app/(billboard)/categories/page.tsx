@@ -21,7 +21,7 @@ export default async function CategoriesPage() {
       {
         data.map((cat: any) => (
           <Link
-            className='bg-secondary hover:bg-primary/50 rounded-xl w-4/5 md:w-96 h-20 flex justify-center items-center gap-8 font-semibold text-lg'
+            className='bg-background hover:bg-primary/20 shadow-xl rounded-xl w-4/5 md:w-96 h-20 flex justify-center items-center gap-8 font-semibold text-lg'
             href={`/categories/clubs?categoryId=${cat.id}`}
             key={cat.id}
           >

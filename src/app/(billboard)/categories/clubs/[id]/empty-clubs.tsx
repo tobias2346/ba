@@ -12,10 +12,10 @@ const EmptyClubs = () => {
         alt="Calendar"
         src="/icons/big-calendar.svg"
       />
-      <p className="text-gray-500 text-lg">El club no tiene partidos disponibles</p>
+      <p className="text-gray-500 text-lg">El club no tiene eventos disponibles</p>
       <Link
         href="/"
-        className="px-4 py-2 font-medium rounded-lg shadow transition-colors duration-200 text-sm xl:text-base bg-primary text-black hover:bg-primary/80"
+        className="px-4 py-2 font-medium rounded-lg shadow transition-colors duration-200 text-sm xl:text-base bg-light shadow-lg text-primary text-black hover:bg-primary/80"
       >
         Volver al inicio
       </Link>

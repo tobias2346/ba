@@ -65,7 +65,7 @@ export function ConfigAccessControlStep({ clubData, onUpdate }: ConfigAccessCont
 
   return (
     <>
-      <Card className="mt-4 border-none bg-secondary/20">
+      <Card className="mt-4 border-none bg-light text-primary shadow-xl">
         <CardHeader className='flex flex-col md:flex-row space-y-4 justify-between items-center'>
           <div>
             <CardTitle>Credenciales de Acceso</CardTitle>

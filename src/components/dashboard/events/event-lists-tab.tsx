@@ -151,7 +151,7 @@ export function EventListsTab({ eventData }: EventListsTabProps) {
   return (
     <>
       <div className="mt-6 space-y-6">
-        <Card className="border-none bg-secondary/20">
+        <Card className="border-none bg-light text-primary shadow-xl">
           <CardHeader className="flex flex-col md:flex-row sapce-y-5 md:items-center justify-between">
             <div>
               <CardTitle>Listas de Invitados</CardTitle>
@@ -175,7 +175,7 @@ export function EventListsTab({ eventData }: EventListsTabProps) {
               </div>
             ) : lists.length > 0 ? (
               lists.map((list) => (
-                <Card key={list.id} className="border-none bg-secondary/20 overflow-hidden">
+                <Card key={list.id} className="border-none bg-light text-primary shadow-xl overflow-hidden">
                   <Collapsible
                     open={openLists.includes(list.id)}
                     onOpenChange={() => toggleList(list.id)}

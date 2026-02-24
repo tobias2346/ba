@@ -136,7 +136,7 @@ export function EventLogisticsStep({ formData, updateFormData, isEditing, errors
               <Input
                 id="address"
                 value={addressQuery}
-                className='border-none bg-secondary/20'
+                className='border-none bg-light text-primary shadow-xl'
                 placeholder="Ej: Brandsen 805, CABA"
                 onChange={(e) => handleAddressChange(e.target.value)}
                 onFocus={() => {
@@ -163,7 +163,7 @@ export function EventLogisticsStep({ formData, updateFormData, isEditing, errors
           </PopoverTrigger>
 
           <PopoverContent
-            className="p-0 w-[var(--radix-popover-trigger-width)] border-none bg-secondary/20'"
+            className="p-0 w-[var(--radix-popover-trigger-width)] border-none bg-light text-primary shadow-xl'"
             align="start"
             onOpenAutoFocus={(e) => e.preventDefault()}
           >
@@ -205,7 +205,7 @@ export function EventLogisticsStep({ formData, updateFormData, isEditing, errors
               <Button
                 variant="outline"
                 className={cn(
-                  "w-full justify-start text-left font-normal border-none bg-secondary/20",
+                  "w-full justify-start text-left font-normal border-none bg-light text-primary shadow-xl",
                   !formData.dateInit && "text-muted-foreground"
                 )}
               >
@@ -232,7 +232,7 @@ export function EventLogisticsStep({ formData, updateFormData, isEditing, errors
                     <Label className="text-xs">Hora (HH)</Label>
                     <Input
                       type="number"
-                      className='border-none bg-secondary/20'
+                      className='border-none bg-light text-primary shadow-xl'
                       min={0}
                       max={23}
                       value={timeValues.hInit}
@@ -268,7 +268,7 @@ export function EventLogisticsStep({ formData, updateFormData, isEditing, errors
               <Button
                 variant="outline"
                 className={cn(
-                  "w-full justify-start text-left font-normal border-none bg-secondary/20",
+                  "w-full justify-start text-left font-normal border-none bg-light text-primary shadow-xl",
                   !formData.dateEnd && "text-muted-foreground"
                 )}
               >
@@ -296,7 +296,7 @@ export function EventLogisticsStep({ formData, updateFormData, isEditing, errors
                     <Label className="text-xs">Hora (HH)</Label>
                     <Input
                       type="number"
-                      className='border-none bg-secondary/20'
+                      className='border-none bg-light text-primary shadow-xl'
                       min={0}
                       max={23}
                       value={timeValues.hEnd}

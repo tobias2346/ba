@@ -50,11 +50,11 @@ export function EventInfoStep({ formData, updateFormData, imageError }: EventInf
     <div className="space-y-6">
       <div className="space-y-2">
         <Label htmlFor="eventName">Nombre del Partido*</Label>
-        <Input className='border-none bg-secondary/20' id="eventName" value={formData.eventName} onChange={handleInputChange} placeholder="Ej: Boca vs Regatas" />
+        <Input className='border-none bg-light text-primary shadow-xl' id="eventName" value={formData.eventName} onChange={handleInputChange} placeholder="Ej: Boca vs Regatas" />
       </div>
       <div className="space-y-2">
         <Label htmlFor="eventDescription">Descripción*</Label>
-        <Textarea className='border-none bg-secondary/20' id="eventDescription" value={formData.eventDescription} onChange={handleInputChange} placeholder="Describe los detalles del partido..." />
+        <Textarea className='border-none bg-light text-primary shadow-xl' id="eventDescription" value={formData.eventDescription} onChange={handleInputChange} placeholder="Describe los detalles del partido..." />
       </div>
 
       <div className="space-y-4">
@@ -70,13 +70,13 @@ export function EventInfoStep({ formData, updateFormData, imageError }: EventInf
             </div>
           )}
            <div className="flex flex-col gap-1">
-            <Button asChild variant="outline" className='border-none bg-secondary/20'>
+            <Button asChild variant="outline" className='border-none bg-light text-primary shadow-xl'>
               <label htmlFor="image-upload" className="cursor-pointer">
                 <ImageIcon className="mr-2 h-4 w-4" />
                 Seleccionar Imagen
               </label>
             </Button>
-            <Input className='border-none bg-secondary/20' id="image-upload" type="file" className="hidden" onChange={handleImageChange} accept="image/*" />
+            <Input className='border-none bg-light text-primary shadow-xl' id="image-upload" type="file" className="hidden" onChange={handleImageChange} accept="image/*" />
             <p className='text-xs text-muted-foreground'>Relación de aspecto 9:5 (Ej: 900x500px).</p>
           </div>
         </div>

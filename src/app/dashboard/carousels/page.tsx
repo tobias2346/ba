@@ -70,7 +70,7 @@ export default function CarouselsListPage() {
 
   return (
     <>
-      <Card className="border-none bg-secondary/20">
+      <Card className="border-none bg-light text-primary shadow-xl">
         <CardHeader className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-x-4">
             <GalleryHorizontal className="h-6 w-6" />
@@ -85,7 +85,7 @@ export default function CarouselsListPage() {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
                 placeholder="Buscar por nombre..."
-                className="pl-9 border-none bg-secondary/40"
+                className="pl-9 border-none bg-light text-primary shadow-xl"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />

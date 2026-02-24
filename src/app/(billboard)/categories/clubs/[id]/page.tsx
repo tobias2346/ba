@@ -58,7 +58,7 @@ export default function ClubDetailPage() {
         } `}
       >
         <ClubData club={club} />
-        <h3 className="text-2xl font-semibold">Partidos del club</h3>
+        <h3 className="text-2xl font-semibold">Eventos del club</h3>
         <div className="w-full h-auto flex">
           {loading ? (
             <ClubEventsLoading />

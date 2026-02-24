@@ -103,7 +103,7 @@ export default function TransactionDetailPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <Card className="md:col-span-2 border-none bg-secondary/20">
+                <Card className="md:col-span-2 border-none bg-light text-primary shadow-xl">
                     <CardHeader>
                         <CardTitle>Información General</CardTitle>
                     </CardHeader>
@@ -128,7 +128,7 @@ export default function TransactionDetailPage() {
                     </CardContent>
                 </Card>
 
-                <Card className='border-none bg-secondary/40'>
+                <Card className='border-none bg-light text-primary shadow-xl'>
                     <CardHeader>
                         <CardTitle>Historial</CardTitle>
                         <CardDescription>Eventos de la transacción</CardDescription>

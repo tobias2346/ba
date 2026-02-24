@@ -14,25 +14,22 @@ body {
 
 @layer base {
   :root {
-    --primary: 195 68% 50%;
-    /* #2DAFCF */
-    --secondary: 215 25% 27%;
-    /* #1e293b */
-    --background: 222 47% 11%;
-    /* #1e293b */
+    --primary: 219 55% 34%;
+    /* #274986 */
+    --secondary: 194 100% 10%;
+    /* #002733 */
+    --background: 48 100% 50%;
+    /* #ffcc00 */
     --light: 0 0% 98%;
     /* #fafafa */
     --dark: 229 84% 5%;
-    /* #1e293b */
-
+    /* #002733 */
     --success: 142 71% 45%;
     /* #22c55e (green-500) */
     --error: 0 84% 60%;
     /* #ef4444 (red-500) */
-
     --warning: 47 95% 53%;
     /* #eab308 (yellow-500) */
-
     --slate50: 210 40% 98%;
     --slate100: 210 40% 96%;
     --slate200: 214 32% 91%;
@@ -44,16 +41,15 @@ body {
   }
 
   .dark {
-    --primary: 195 68% 50%;
-    /* #2DAFCF */
-
-    --secondary: 215 25% 27%;
-    /* #1e293b */
-    --background: 222 47% 11%;
-    /* #1e293b */
+    --primary: 219 55% 34%;
+    /* #274986 */
+    --secondary: 194 100% 10%;
+    /* #002733 */
+    --background: 0 0% 98%;
+    /* #ffcc00 */
     --light: 0 0% 98%;
     /* #fafafa */
-    --dark: 229 84% 5%;
+    --dark: 0 0% 98%;
     /* #1e293b */
 
     --success: 142 71% 45%;

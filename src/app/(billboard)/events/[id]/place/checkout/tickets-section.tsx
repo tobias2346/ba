@@ -74,7 +74,7 @@ const TicketsSection = () => {
   }, [checkout])
 
   return (
-    <div className="w-full md:bg-slate-800 rounded-lg shadow flex flex-col gap-y-2 justify-start items-start p-4 md:p-8 mb-8 h-auto">
+    <div className="w-full md:bg-light shadow-lg text-primary rounded-lg flex flex-col gap-y-2 justify-start items-start p-4 md:p-8 mb-8 h-auto">
       <h2 className="text-xl font-bold font-headline">Elegí tu Ticket</h2>
       {visibles.map((ticket: Checkout) => <EventTicket key={ticket.id} ticket={ticket} />)}
     </div>

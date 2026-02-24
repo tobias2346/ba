@@ -66,7 +66,7 @@ const EventBuyTag = ({ type, link, icon, altIcon, title, price }: EventBuyTagPro
     <button
       type="button"
       onClick={handleClick}
-      className="w-full md:w-80 h-20 bg-secondary hover:bg-primary/50 transition-all duration-300 rounded-lg flex items-center justify-start gap-x-4 px-4 relative"
+      className="w-full md:w-80 h-20 bg-light shadow-lg text-primary hover:bg-primary/50 transition-all duration-300 rounded-lg flex items-center justify-start gap-x-4 px-4 relative"
     >
       <Image src={icon} width={30} height={30} alt={altIcon} />
       <div className="flex flex-col items-start justify-start">

@@ -81,7 +81,7 @@ export function EventParticipantsTab({
 
   return (
     <div className="mt-6">
-      <Card className='border-none bg-secondary/20'>
+      <Card className='border-none bg-light text-primary shadow-xl'>
         <CardHeader>
           <div className="flex flex-col space-y-5 md:flex-row md:items-center justify-between">
             <div>
@@ -99,7 +99,7 @@ export function EventParticipantsTab({
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
                   placeholder="Buscar por nombre, documento o alias..."
-                  className="pl-9 bg-secondary/40 border-none"
+                  className="pl-9 bg-light text-primary shadow-xl border-none"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -129,7 +129,7 @@ export function EventParticipantsTab({
                 {filteredParticipants.map((p, i) => (
                   <Card
                     key={i}
-                    className="border-none bg-secondary/40"
+                    className="border-none bg-light text-primary shadow-xl"
                   >
                     <CardContent className="p-4 space-y-3">
                       <div className="flex items-start gap-3">

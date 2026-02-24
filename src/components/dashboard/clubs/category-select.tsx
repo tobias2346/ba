@@ -54,7 +54,7 @@ export function CategorySelect({ value, onChange }: CategorySelectProps) {
     return (
         <>
             <Select value={value} onValueChange={onChange}>
-                <SelectTrigger className='border-none bg-secondary/20'>
+                <SelectTrigger className='border-none bg-light text-primary shadow-xl'>
                     <SelectValue placeholder="Seleccionar categoría" />
                 </SelectTrigger>
                 <SelectContent>

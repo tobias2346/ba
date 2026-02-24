@@ -128,7 +128,7 @@ export default function EventDetailPage() {
           <Button
             variant="outline"
             type="button"
-            className="bg-secondary/50 border-none hover:bg-primary/30"
+            className="bg-light text-primary shadow-xl border-none hover:bg-primary/30"
             onClick={() => setOpenAccessControl(true)}
           >
             <UserCheck className="mr-2 h-4 w-4" />
